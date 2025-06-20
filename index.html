@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🏥 Υπολογισμός Ζευγαριών Ασθενών</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>🏥 Υπολογισμός Ζευγαριών Ασθενών</h1>
+    <hr />
+    <p>
+      Αυτή η εφαρμογή υπολογίζει τον αριθμό των ζευγαριών ασθενών που πρέπει να
+      σχηματιστούν με βάση την δυναμικότητα των θεραπευτών και τη διάρκεια της
+      θεραπείας.
+    </p>
+    <div id="mainSplit">
+      <div class="left">
+        <h2>📊 Παράμετροι Υπολογισμού</h2>
+        <div>
+          <label for="people">Ποιος είναι ο συνολικός αριθμός ασθενών (Ν);</label>
+          <input type="number" name="people" min="0" max="120" />
+        </div>
+
+        <div>
+          <label for="therap"> Ποιος είναι ο αριθμός των θεραπευτών (Φ);</label>
+          <input type="number" name="therap" min="0" max="120" />
+        </div>
+        <div>
+          <label for="radio"> Ποια είναι η διάρκεια κάθε θεραπείας;</label>
+        </div>
+        <div>
+          <input type="radio" name="time" value="30" id="30" />
+          <label for="30">30 Λεπτά</label>
+
+        </div>
+        <div>
+          <input type="radio" name="time" value="45" id="45" />
+          <label for="45">45 Λεπτά</label>
+        </div>
+        <div>
+          <input type="checkbox" name="proistam" />
+          <label for="proistam">Είναι ο προϊστάμενος παρών;</label>
+        </div>
+      </div>
+
+      <div class="right">
+        <h2>ℹ️ Πληροφορίες Ικανοτήτων</h2>
+        <div id="blueBox">
+          <p>Διάρκεια 30 λεπτών:</p>
+          <ul>
+            <li>Κάθε θεραπευτής: 7 ασθενείς</li>
+            <li>Προϊστάμενος: 3 ασθενείς</li>
+          </ul>
+        </div>
+        <h2>📋 Οδηγίες Χρήσης</h2>
+        <div>
+          <ol>
+            <li>Συμπληρώστε όλα τα πεδία της φόρμας</li>
+            <li>Πατήστε το κουμπί "Υπολογισμός"</li>
+            <li>Δείτε τα αποτελέσματα παρακάτω</li>
+          </ol>
+          <p>Σημείωση: Τα ζευγάρια σχηματίζονται όταν ο αριθμός ασθενών υπερβαίνει τη μέγιστη δυναμικότητα του νοσοκομείου.</p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <button>Υπολογισμός Ζευγαριών</button>
+
+  </body>
+</html>
